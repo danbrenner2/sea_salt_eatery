@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: "Arial", serif;
+        }
+
+        .header {
+            background-color: #66CCFF;
+            font-family: "Arial Black", serif;
+            text-align: center;
+        }
+
+        .text {
+            text-align: center;
+            padding-left: 100px;
+
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td,th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            margin: 0 auto;
+            text-align: center;
+            height: 30px;
+            padding-top: 12px;
+        }
+
+        .topnav a {
+            display: inline;
+            color: #f2f2f2;
+            height: 50px;
+            text-align: center;
+            padding: 30px;
+            text-decoration: none;
+            font-size: 17px;
+            margin: 0 auto;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            margin: 0 auto;
+        }
+
+        .topnav a.active {
+            background-color: #66CCFF;
+            color: white;
+            margin: 0 auto;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <h1>Sea Salt Eatery</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="events.html"class="active">Events</a>
+    <a href="contact.html">Contact</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<br>
+
+<div class="text">
+    <p>
+        <a href="https://www.facebook.com/pg/seasalteatery/events/?ref=page_internal>">Check out our Facebook page for more info about events!</a>
+    </p>
+</div>
+
+
+<br>
+
+<div class="text">
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Event</th>
+    </tr>
+    <tr>
+        <td>Apr 1st</td>
+        <td>Sea Salt Eatery Interview Day</td>
+    </tr>
+    <tr>
+        <td>May 12th</td>
+        <td>Rush River Draft Trailer at Sea Salt</td>
+    </tr>
+    <tr>
+        <td>May 24th</td>
+        <td>Memorial Day Weekend with Sea Salt & Surly Brewing</td>
+    </tr>
+    <tr>
+        <td>May 31st</td>
+        <td>A Cider Truck w/ Minnesota Cider Guild & Sea Salt</td>
+    </tr>
+    <tr>
+        <td>Jun 14th</td>
+        <td>Bauhaus Tap Trailer Takeover at Sea Salt Eatery</td>
+    </tr>
+    <tr>
+        <td>Jul 4th</td>
+        <td>4th of July Weekend w/ Lagunitas & Sea Salt</td>
+    </tr>
+    <tr>
+        <td>Jul 19th</td>
+        <td>3 Day Tap Trailer Takeover</td>
+    </tr>
+    <tr>
+        <td>Aug 30th - Sep 7th</td>
+        <td>Labor Day Weekend w/ Sea Salt & Surly Brewing</td>
+    </tr>
+    <tr>
+        <td>Oct 6th</td>
+        <td>Eastlake x Oliphant Collab Party at Sea Salt</td>
+    </tr>
+</table>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>
